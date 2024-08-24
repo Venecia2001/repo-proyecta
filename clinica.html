@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Clínica San Pedro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/logo-removebg-preview (1).png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=Lobster&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+<header>
+    <div id="logo">
+        <img src="imagenes/logo-removebg-preview (1).png" class="logotipo">
+        <a href="clinica.html" id="tituloPrincipal">Clínica San Pedro</a>
+    </div>
+    
+    <nav class="menuPrincipal">
+      <ul>
+        <li> <a class="botones" href="">Inicio</a></li>
+        <li><a class="botones" href="#cardiologia">Especialidades</a> </li>
+        <li> <a class="botones"  href="#horarios">Horarios</a> </li>
+        <li> <a class="botones" href="#contactos">Contactos</a> </li>
+      </ul>
+      <nav class="menuDeServicios">
+        <input type="checkbox" id="menuServicios">
+          <label  for="menuServicios">Servicos <samp id="flecha">▼</samp></label>
+          <ul id="itenServicios">
+            <li> <a href="seccionesPagina/seccionCardio.html"> Ultrasonido</a></li>
+            <li> <a href="seccionTraumatoogia/Traumatología.html">Rayos X</a></li>
+            <li> <a href="seccionOdontologia/Odontologia.html">Endodoncia</a></li>
+          </ul>
+      </nav>
+    </nav>
+
+    
+
+    <nav class="MenuHambur">
+      <input type="checkbox" id="menu">
+      <label  for="menu"> ☰</label>
+      <ul>
+        <li> <a class="botones" href="">Inicio</a></li>
+        <li><a class="botones" href="#cardiologia">Especialidades</a></li>
+        <li> <a class="botones"  href="#horarios">Horarios</a></li>
+        <li> <a class="botones" href="#logo">Servicios</a>  </li>
+      </ul>
+    </nav>
+</header>
+
+<div class="seccionInicio">
+
+    <section id="seccionInicio1">
+   
+        <h1> Clínica San Pedro</h1>
+        <p>Nuestra prioridad es tú bienestar</p>
+        <button id="botonInicio">Agenda tu cita</button>
+
+    </section>
+
+    <dialog id="DialogRegistro">
+
+      <div class="contenidoDialog"> 
+
+        <div class="headerModel"> 
+            <h2>Bienvenido!</h2>
+            <form method="dialog">
+              <button class="ModalClose"> X</button>
+            </form>
+        </div>
+
+        <div class="cuadritoBotones"> 
+
+          <button class="botonesLogin" id="botonInicoSesion">Iniciar sesion </button>
+
+         <button  class="botonesLogin" id="botonRegistro">Registrarse</button>
+
+        </div>
+
+        <div class="cuadrosDeRegistro">
+
+            <div id="iniciarSeccion">
+
+              <h2>Iniciar Sesion</h2>
+              <form action="">
+                <label for="nombre">Usuario</label>
+                <input id="nombre" type="text" placeholder="Usuario">
+
+                <label for="Apellido">Contraseña</label>
+                <input id="Apellido" type="password" placeholder="Contraseña">
+
+                <button type="submit" class="botonesLogin"> INGRESAR</button>
+              </form>
+
+              <a id="LinkRegistro">¿No tienes Cuenta?<span class="textoImport"> Crear una</span></a>
+            </div>
+
+            <div id="RegistroUsuario">
+
+              <h2>Registrarse</h2>
+              <form action="">
+                <label for="nombre">Nombre</label>
+                <input id ="nombre" type="text" placeholder="Nombre" class="nombreClase">
+
+                <label for="Apellido">Apellido</label>
+                <input id="Apellido" type="text" placeholder="Apellido" class="ApellidoClase">
+
+                <label for="Telefono">Telefono</label>
+                <input id="Telefono" type="number" placeholder="Telefono">
+
+                <label for="Email">Email</label>
+                <input id="Email" type="email" placeholder="Email" >
+
+                <label for="clave">Contraseña</label>
+                <input id="clave" type="password" placeholder="Contraseña">
+
+                <label for="claveRepeat">Repita Contraseña</label>
+                <input id="claveRepeat" type="password" placeholder="Repita su Contraseña ">
+
+                <button type="submit"class="botonesLogin" id="botonRegistrarse" >REGISTARSE</button>
+              </form>
+
+              <span class="resultado"> todos los campos son requedidos</span>
+
+            </div>
+          </div>
+
+        </div>
+    </dialog>
+
+    
+</div>
+
+<div id="cardiologia" class="SeccionEspecialidades">
+    <div class="tituloEsecialidad">
+      <h2 id="titulo2">Especialidades Médicas</h2>
+    </div>
+    
+
+    <div class="especialidades">
+
+        <a href="seccionesPagina/seccionCardio.html" class="tarjetas" id="areaCardio">
+
+          <div class="tituloTarjeta" > 
+            <h2>Cardiología</h2> 
+          </div>
+        <a>
+    
+        <a  href="seccionTraumatoogia/Traumatología.html" class="tarjetas" id="areatraumatologia">
+          <div class="tituloTarjeta"> 
+            <h2>Traumatología</h2>
+          </div>
+        <a>
+    
+        <a href="seccionOdontologia/Odontologia.html" class="tarjetas" id="areaOdontologia">
+
+          <div class="tituloTarjeta">
+            <h2>Odontología</h2> 
+          </div>
+        </a>
+
+    </div>
+
+
+</div>
+
+<section id="contenedorPrincipal">
+
+    <div id="citaOnline">
+        <h2>Citas Online</h2>
+    </div>
+
+    <div id="contenedorCita">
+
+        <div class="cita" id="listaDeCitas">
+            <h3>Solicita en línea la cita con cualquiera de estas especialidades médicas:</h3>
+            <ul>
+                <li>Cardiología</li>
+                <li>Odontología</li>
+                <li>Traumatología</li>
+            </ul>
+
+            <button id="citasOnline">solicita una cita</button>
+        </div>
+
+        <div class="cita" id="imagenOnline">
+        </div>
+
+    </div>
+
+    <dialog id="ventana">
+      <div class="contenidoDialog"> 
+
+          <div class="headerModel">
+            <h2> Citas Online</h2>
+
+            <form method="dialog">
+              <button class="ModalClose"> X</button>
+            </form>
+          </div>
+
+        <div class="contenedorDialog"> 
+
+            <div class="segmento" id="Servicio">  
+              <div class="tituloDeSegmento"> Servicios </div>
+              <a>
+                Atención / Consulta medica
+              </a>
+            </div>
+
+            <div class="segmento" id="especialidades">
+
+              <div class="tituloDeSegmento"> Especialidades </div>
+
+              <div id="listaEspecialidades">
+
+                <a class="iten--especialidades" id="cardio">Cardiología</a>
+                <a class="iten--especialidades" id="traumatologia"> Traumatología</a>
+                <a class="iten--especialidades" id="odontologia">Odontología</a>
+                
+              </div>
+            </div>
+
+            <div class="segmento" id="doctores ">
+
+              <div class="tituloDeSegmento" > Doctores </div>
+
+              <div id="listaDoctores">
+                
+              </div>
+
+            </div>
+
+            <div class="segmento" id="fechas">
+
+              <div class="tituloDeSegmento"> Fechas </div>
+
+              <div id="calendarioCita">
+                
+                <div class="cuadroDePrueba">
+
+                      <div class="grid-iten diasSemana" >LUNES</div>
+                      <div class="grid-iten diasSemana">MARTES</div>
+                      <div class="grid-iten diasSemana">MIERCOLES</div>
+                      <div class="grid-iten diasSemana">JUEVES</div>
+                      <div class="grid-iten diasSemana">VIERNES</div>
+                      <div class="grid-iten diasSemana">SABADO</div>
+                      <div class="grid-iten diasSemana">DOMINGO</div>
+
+                      <div class="grid-iten" id="PrimerDay">1</div>
+                      <div class="grid-iten" >2</div>
+                      <div class="grid-iten">3</div>
+                      <div class="grid-iten">4</div>
+                      <div class="grid-iten">5</div>
+                      <div class="grid-iten">6</div>
+                      <div class="grid-iten">7</div>
+                      <div class="grid-iten">8</div>
+                      <div class="grid-iten">9</div>
+                      <div class="grid-iten">10</div>
+                      <div class="grid-iten">11</div>
+                      <div class="grid-iten">12</div>
+                      <div class="grid-iten">13</div>
+                      <div class="grid-iten">14</div>
+                      <div class="grid-iten">15</div>
+                      <div class="grid-iten">16</div>
+                      <div class="grid-iten">17</div>
+                      <div class="grid-iten">18</div>
+                      <div class="grid-iten">19</div>
+                      <div class="grid-iten">20</div>
+                      <div class="grid-iten">21</div>
+                      <div class="grid-iten">22</div>
+                      <div class="grid-iten ">23</div>
+                      <div class="grid-iten DiaDispinible" >24</div>
+                      <div class="grid-iten">25</div>
+                      <div class="grid-iten DiaDispinible">26</div>
+                      <div class="grid-iten">27</div>
+                      <div class="grid-iten DiaDispinible">28</div>
+                      <div class="grid-iten ">29</div>
+                      <div class="grid-iten">30</div>
+                      <div class="grid-iten">31</div>
+                </div>
+
+                <div id="contenedorDeHoras">
+                  <h2 id="tituloHoras">Horas disponibles</h2>
+
+                  <div class="cuadroHoras">
+                    <div class="grid-horas" >8:00AM</div>
+                    <div class="grid-horas">9:00AM</div>
+                    <div class="grid-horas">10:00AM</div>
+                    <div class="grid-horas">11:00AM</div>
+                    <div class="grid-horas">12:00PM</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            
+        </div>
+        
+        <div class="contenedorBoton">
+          <button id="botonDialog" > Continuar</button>
+        </div>
+
+      </div>
+    </dialog>
+
+</section>
+
+<section class="Horarios" id="horarios">
+    <table>
+        <thead>
+          <caption>
+             Horario de Atención 
+          </caption>
+          <th>HORA</th>
+          <th>LUNES</th>
+          <th>MARTES</th>
+          <th>MIERCOLES</th>
+          <th>JUEVES</th>
+          <th>VIERNES</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>8:00 AM</td>
+            <td>Cardiología</td>
+            <td>Odontología</td>
+            <td>Traumatología</td>
+            <td>Cardiología</td>
+            <td>Medicina General</td>
+          </tr>
+          <tr>
+            <td>9:00AM</td>
+            <td>Traumatología</td>
+            <td>Cardiología</td>
+            <td>Odontología</td>
+            <td>Medicina General</td>
+            <td>Cardiología</td>
+          </tr>
+          <tr>
+            <td>10:00AM</td>
+            <td>Odontología</td>
+            <td>Traumatología</td>
+            <td>Medicina General</td>
+            <td> Odontología</td>
+            <td> Traumatología</td>
+          </tr>
+          <tr>
+            <td>11:00AM </td>
+            <td>☕ DESCANSO</td>
+            <td>☕ DESCANSO</td>
+            <td>☕ DESCANSO</td>
+            <td>☕ DESCANSO</td>
+            <td>☕ DESCANSO</td>
+          </tr>
+          <tr>
+            <td>1:00PM - 3:00PM</td>
+            <td> 
+                <ul>
+                  <li>Sevicio de ultrasonido cardíaco </li>
+                  <li>Servicio de rayos X</li>
+                  <li>Servio de Endodoncia </li>
+                </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Sevicio de Electrocadiograma </li>
+                <li>Servicio de rayos X</li>
+                <li>Servio de Endodoncia </li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Sevicio de Electrocadiograma </li>
+                <li>Servicio de rayos X</li>
+                <li>Servio de Endodoncia </li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Servicio de rayos x</li>
+              </ul>
+            </td>
+            <td>
+                <ul>
+                  <li>Servicio de rayos X</li>
+                  <li>Servio de Endodoncia </li>
+                </ul>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+      </table>
+
+</section>
+
+
+<footer>
+
+    <section class="footerSuperior">
+
+        <div class="contactos" id="contactos">
+            <h2>Contactos</h2>
+
+            <p> linea Local: 0212 2254114</p><br>
+
+            <p>telefonos</p>
+            <p>0245-12345678</p>
+            <p>0412-7418596</p>
+            <p>0416-18533998</p><br>
+
+            <h2>Email:</h2>
+            <p>Johan851artigas@gamil.com</p><br>
+
+            <h2 id="redesSociales">Redes Sociales</h2>
+            <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="bi bi-facebook"></i> </a>
+            <a href="https://x.com/home?lang=es" target="_blank" class="twiter"><i class="bi bi-twitter-x"></i> </a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i> </a>
+            <a href="https://wa.me/tunumero" target="_blank"><i class="bi bi-whatsapp"></i></a>
+
+        </div>
+
+        <div class="ubicacion">
+            <div class="conteinerUbi">
+                <h2>Ubícanos</h2>
+                <p>Ubicanos Urbanización Simón Bolívar, Carretera Nacional Guanare.. Biscucuy, Biscucuy, Portuguesa</p>
+            </div>
+            <div class="mapa"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1703.735450550835!2d-69.98666148252299!3d9.347301384455392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20maps!5e0!3m2!1ses!2sve!4v1713238598369!5m2!1ses!2sve" width="380" height="390" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+            </div>
+
+        </div>
+    </section>
+
+    <div class="piePagina">
+        <p>  © 2024 Clínica San Pedro, C.A | Rif J-00234523-3 </p>
+    </div>
+    
+</footer>  
+
+<script>
+    
+  const botonTraumatologia =document.getElementById("traumatologia")
+  const botonOdontologia =document.getElementById("odontologia")
+  const botonInicio = document.getElementById("botonInicio")
+  const botonCitas= document.getElementById("citasOnline")
+  const botonCardiologia = document.getElementById("cardio")
+  const LinkRegistro = document.getElementById("LinkRegistro")
+  const inicioSesion =document.getElementById("iniciarSeccion")
+  const RegistroUsuario = document.getElementById("RegistroUsuario")
+
+
+  const botonInicioSesion = document.getElementById("botonInicoSesion")
+  const botonMostrarRegistro = document.getElementById("botonRegistro")
+
+  const cuadroDeFechas = document.getElementById("calendarioCita")
+  const listaDoctores = document.getElementById("listaDoctores")
+
+// Parte de formularios 
+
+  const imputNombre = document.querySelector(".nombreClase")
+  const inputApellido = document.querySelector(".ApellidoClase")
+  const inputTelefono = document.getElementById("Telefono")
+  const inputEmail = document.getElementById("Email")
+  const inputContraseña = document.getElementById("clave")
+  const inputRepeatContraseña = document.getElementById("claveRepeat")
+  const spanResultado = document.querySelector(".resultado")
+
+  const botonEviar = document.getElementById("botonRegistrarse")
+  botonEviar.addEventListener("click", (e) =>{
+    e.preventDefault();
+    let error = validarFormulario();
+    if(error[0]){
+        spanResultado.innerHTML = error[1];
+        spanResultado.classList.add("red")
+    }else{
+        spanResultado.innerHTML = "te has registrado corectamente"
+        spanResultado.classList.add("green")
+        spanResultado.classList.remove("red")
+    }
+  })
+  
+
+  let listaObetos
+  let doctorescardiologos =[]
+  let dotoresTrumatologos = []
+  let doctoresOdontogos = []
+  let botonesClass = []
+
+  class DoctoresC{
+    constructor(nombre, foto){
+        this.nombre = nombre
+        this.foto = foto
+     }   
+  }   
+
+  let cardiologo1 = new DoctoresC("Jhoan Artigas", "imagenes/doctorArigas.jpeg")
+
+  let cardiologo2 = new DoctoresC("Maily Guerra", "imagenes/doctora02.jpg")
+
+  let cardiologo3 = new DoctoresC("Cristian Zambrano", "imagenes/retratoDeDoctor.jpg")
+
+  let cardiologo4 = new DoctoresC("Mariana Garcia", "imagenes/doctora03.jfif")
+
+  let cardiologo5 = new DoctoresC("Paola Jimenez", "imagenes/doctora04.jpg")
+
+  let cardiologo6 = new DoctoresC("Jose Azuaje", "imagenes/doctor07.jpg")
+
+  let traumatologo1 = new DoctoresC("Edmundo Marquez", "imagenes/DoctorCardiologo.jfif")
+
+  let traumatologo2 = new DoctoresC("Sonia Rivero", "imagenes/doctora.jpg")
+
+  let traumatologo3 = new DoctoresC("Hector Garcia", "imagenes/doctor-profile-02.jpg")
+
+  let traumatologo4 = new DoctoresC("Dante Moreno", "imagenes/Traumatologo03.jpg")
+
+  let traumatologo5 = new DoctoresC("Antonio Sanz", "imagenes/Traumatologo02.jpg")
+
+  let traumatologo6 = new DoctoresC("Maria Betancurt", "imagenes/doctora04.jpg")
+
+  let odontologo1 = new DoctoresC("Jesus Bueno","imagenes/odontologo01.png")
+
+  let odontologo2 = new DoctoresC("Gleydis Vasquez","imagenes/odontologa02.jpg")
+
+  let odontologo3 = new DoctoresC("Wilian Gonzalez","imagenes/odontologo03.jpg")
+
+  let odontologo4 = new DoctoresC("German Godoy","imagenes/odontologo04.jfif")
+
+  let odontologo5 = new DoctoresC("Sergio Briceño","imagenes/odontologo05.jfif")
+
+  let odontologo6 = new DoctoresC("Hernesto Betancurt","imagenes/FranciscoOdontologo06.jpg")
+
+  doctorescardiologos.push(cardiologo1, cardiologo2, cardiologo3, cardiologo4, cardiologo5, cardiologo6)
+
+  dotoresTrumatologos.push(traumatologo1, traumatologo2, traumatologo3, traumatologo4, traumatologo5, traumatologo6)
+
+  doctoresOdontogos.push(odontologo1, odontologo2, odontologo3, odontologo4,odontologo5, odontologo6)
+
+  botonInicio.addEventListener("click", openLogin)
+  botonCardiologia.addEventListener("click", listaJusta)
+  botonTraumatologia.addEventListener("click", listaDoctores2)
+  botonOdontologia.addEventListener("click", listaDoctores3)
+  botonCitas.addEventListener("click", openModal)
+  LinkRegistro.addEventListener("click", mostrarFron)
+
+
+  botonInicioSesion.addEventListener("click", mostrarFormInicio)
+  botonMostrarRegistro.addEventListener("click", mostrarFronRegistro)
+
+  function validarFormulario(){
+    let error = [];
+    if(imputNombre.value.length < 3 || imputNombre.value.length > 40){
+        error[0] = true;
+        error[1] = "El nombre es invalido"
+        return error;
+    }else if(inputApellido.value.length < 5 || inputApellido.value.length > 40){
+        error[0] = true;
+        error[1] = "El Apellido es invalido"
+        return error;
+    }else if(inputTelefono.value.length != 11){
+      error[0] = true;
+      error[1] = "El telefono es invalido"
+      return error;
+    }else if(inputEmail.value.length < 5 || inputEmail.value.length > 40 || inputEmail.value.indexOf("@") == -1 || inputEmail.value.indexOf(".") == -1){
+        error[0] = true;
+        error[1] = "El email no es valido"
+        return error
+    }else if(inputContraseña.value.length < 8){
+      error[0] = true;
+      error[1] = "La contraseña necesita como minimo 8 caracteres"
+      return error
+    }else if (inputRepeatContraseña.value != inputContraseña.value){
+      error[0] = true;
+      error[1] = "su contraseña no coinsede"
+      return error
+    }
+
+    error[0] = false
+    return error
+
+    
+  }
+
+  function mostrarFronRegistro(){
+    inicioSesion.style.display = "none"
+    botonMostrarRegistro.classList.add("botonesLoginSelecionado");
+    botonMostrarRegistro.classList.remove("botonesLogin")
+    botonInicioSesion.classList.remove("botonesLoginSelecionado")
+    botonInicioSesion.classList.add("botonesLogin")
+
+    RegistroUsuario.style.display ="flex"
+
+  }
+
+  function mostrarFormInicio(){
+
+    inicioSesion.style.display = "flex"
+    botonInicioSesion.classList.add("botonesLoginSelecionado");
+    botonInicioSesion.classList.remove("botonesLogin")
+    botonMostrarRegistro.classList.remove("botonesLoginSelecionado")
+    botonMostrarRegistro.classList.add("botonesLogin")
+
+    RegistroUsuario.style.display ="none"
+
+  }
+
+  function mostrarFron(){
+
+    inicioSesion.style.display = "none"
+    botonMostrarRegistro.classList.add("botonesLoginSelecionado");
+    botonMostrarRegistro.classList.remove("botonesLogin")
+    botonInicioSesion.classList.remove("botonesLoginSelecionado")
+    botonInicioSesion.classList.add("botonesLogin")
+    
+    RegistroUsuario.style.display ="flex"
+
+  }
+
+  function openLogin(){
+    const dialog = document.getElementById("DialogRegistro");
+    dialog.showModal();
+  }
+
+  function openModal(){
+    const dialog = document.getElementById("ventana");
+     dialog.showModal(); 
+
+  }
+  
+  function listaJusta(){
+
+    listaDoctores.innerHTML= ""
+
+    doctorescardiologos.forEach((medico) =>{
+        listaObetos= `
+          <a class="dotorCardiologo  EventoPro" id=${medico.nombre}>
+              <img src=${medico.foto} alt=${medico.nombre} class="fotoDoctor">
+                <p>${medico.nombre}</p>
+          </a>`
+
+        listaDoctores.innerHTML += listaObetos
+    })
+
+      botonesClass = document.querySelectorAll(".EventoPro")
+
+      botonesClass.forEach(boton =>{
+        boton.addEventListener("click", mostrarFecha)
+      })
+
+      cuadroDeFechas.style.display ="none"
+
+  }
+
+  function listaDoctores2(){
+
+    listaDoctores.innerHTML= ""
+
+    dotoresTrumatologos.forEach((medico) =>{
+        listaObetos= `
+          <a class="dotorCardiologo EventoPro">
+              <img src=${medico.foto} alt=${medico.nombre} class="fotoDoctor">
+                <p>${medico.nombre}</p>
+          </a>`
+
+      listaDoctores.innerHTML += listaObetos
+    })
+
+      botonesClass = document.querySelectorAll(".EventoPro")
+
+      botonesClass.forEach(boton =>{
+      boton.addEventListener("click", mostrarFecha)
+    })
+
+    cuadroDeFechas.style.display ="none"
+
+  }
+
+  function listaDoctores3(){
+
+    listaDoctores.innerHTML= ""
+
+    doctoresOdontogos.forEach((medico) =>{
+        listaObetos= `
+          <a class="dotorCardiologo EventoPro" id=${medico.nombre}>
+              <img src=${medico.foto} alt=${medico.nombre} class="fotoDoctor">
+                <p>${medico.nombre}</p>
+          </a>`
+
+        listaDoctores.innerHTML += listaObetos
+    })
+
+      botonesClass = document.querySelectorAll(".EventoPro")
+
+      botonesClass.forEach(boton =>{
+      boton.addEventListener("click", mostrarFecha)
+    })
+
+    cuadroDeFechas.style.display ="none"
+   
+  }
+
+
+  function mostrarFecha(){
+
+    cuadroDeFechas.style.display ="flex"
+  }
+    
+</script>
+   
+</body>
+</html>
